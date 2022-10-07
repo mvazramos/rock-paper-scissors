@@ -1,0 +1,85 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(229, 224, 224);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.btn-image{
+    width: 150px;
+    height: 150px;
+    padding: 0;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:auto;
+    padding: 1rem 0;
+}
+.logo{
+    margin-left:10.5rem;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+    padding-left: 1.5rem;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5rem;
+    gap: 2rem;
+}
+
+.score-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4.5rem;
+    gap: 3rem;
+}
+
+.score-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+}
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 1rem 0;
+}
+
+
+
+
+nav, main, footer{
+    flex-shrink: 0;
+}   

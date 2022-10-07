@@ -97,4 +97,21 @@ function game(){
     }
 }
 
-console.log(game());
+// console.log(game());
+var clicks = 0;
+
+function onClick() {
+  clicks += 1;
+  document.getElementById("player-score").innerHTML = clicks;
+};
+
+
+
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', onClick);
+});
